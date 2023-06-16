@@ -6,9 +6,185 @@
   <title>BMW</title>
   
   <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/lib/splide.min.css">
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
-<body></body>
+<body>
 
+  <!-- inicio do header  -->
+  <header class="header">
+    <div class="container">
+      <div class="header__flex">
+        <div class="header__contato">
+          <div class="header__contato-mobile">
+            <a href="#">
+              <i class="fontello icon-telefone">&#xe804;</i>
+              <span>(21) 2042-4442</span>
+            </a>
+          </div>
+          <div class="header__contato-desktop"></div>
+        </div>
+        <div class="header__logo">
+          <a href="/">
+            <img src="/src/imgs/logos/logo-bmw-rio.svg" alt="BMW Rio">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__button-fixed">
+      <button>Solicite uma cotação</button>
+    </div>
+  </header>
+  <!-- fim do header -->
+
+  <!-- inicio do conteúdo principal -->
+  <main>
+
+    <!-- Banner topo -->
+    <section class="banner-principal">
+      <div class="splide" aria-label="BMW">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="/src/imgs/banners/mobile-banner.png" alt="BMW Rio">
+            </li>
+            <li class="splide__slide">
+              <img src="/src/imgs/banners/mobile-banner.png" alt="BMW Rio">
+            </li>
+            <li class="splide__slide">
+              <img src="/src/imgs/banners/mobile-banner.png" alt="BMW Rio">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- vitrine de produtos -->
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase__title">
+          <h2>Escolha seu BMW</h2>
+        </div>
+        <div class="shocase__grid">
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- fim do conteúdo principal -->
+
+  <!-- Inicio footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <div class="footer__description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed a elementum orci, vitae commodo nibh. In vitae convallis nisl. 
+            Morbi rhoncus mattis purus sed commodo. Integer rhoncus ex risus. 
+            Proin efficitur elit nunc, ut pulvinar massa egestas in. 
+            Fusce quis quam viverra, pretium quam ac, consectetur lectus.
+          </p>
+        </div>
+        <hr>
+        <div class="footer__copyright">
+          <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
+        </div>  
+        <div class="footer__develop">
+          <span>Feito por:</span>
+          <img src="/src/imgs/logos/logo-alpes.png" alt="Alpes One">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fim footer -->
+
+</body>
+
+<script src="./src/js/lib/splide.min.js"></script>
 <script src="./src/js/script.js"></script>
 </html>

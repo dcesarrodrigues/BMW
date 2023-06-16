@@ -1,0 +1,85 @@
+.header {
+  background-color: $branco;
+  height: 61px;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  &__flex {
+    height: auto;
+    padding: 13px 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // bloco a esquerda no topo
+  &__contato {
+
+    //bloco de contato mobile
+    &-mobile {
+      display: none;
+      
+      @media #{$mq-mobile} {
+        display: block;
+
+        a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+        
+        span {
+          font-size: 0.87rem;
+          color: $cinza-font;
+          font-family: $fontFamilyBold;
+          font-weight: $bold;
+          line-height: 0.85rem;
+        }
+        
+        i {
+          margin-right: 6px;
+          font-size: 0.87rem;
+          color: $cinza-font;
+          font-weight: $bold;
+          line-height: 0.85rem;
+        }
+      }
+    }
+
+    &-desktop {
+
+      @media #{$mq-tablet} {
+        display: none;
+      }
+    }
+  }
+
+  //bloco a direita no topo 
+  &__logo {
+
+    a {
+      display: flex;
+    }
+    
+    img {
+      width: 34.5px;
+    }
+  }
+
+  &__button-fixed {
+
+    button {
+      @extend .button;
+      background-color: $azul-claro;
+      color: $branco;
+      font-size: 0.875rem;
+      height: 45px;
+      width: 100%;
+    }
+  }
+}

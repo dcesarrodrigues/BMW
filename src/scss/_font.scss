@@ -1,9 +1,20 @@
 @font-face {
-  font-family: "BMWLight";
-  src: url("../fonts/BMWTypeNext-Light.20210426144302") format("ttf");
+  font-family: 'BMWLight';
+  src: url("/src/fonts/BMW-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "BMWBold";
-  src: url("../fonts/BMWTypeNext-Bold.20210426144302.ttf") format("ttf");
+  font-family: 'BMWBold';
+  src: url('/src/fonts/BMW-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bmw-icons';
+  src: url('../icons/fontello/font/bmw-icons.eot?98364672');
+  src: url('../icons/fontello/font/bmw-icons.eot?98364672#iefix') format('embedded-opentype'),
+       url('../icons/fontello/font/bmw-icons.woff?98364672') format('woff'),
+       url('../icons/fontello/font/bmw-icons.ttf?98364672') format('truetype'),
+       url('../icons/fontello/font/bmw-icons.svg?98364672#bmw-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }

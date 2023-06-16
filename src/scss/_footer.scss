@@ -1,0 +1,43 @@
+.footer {
+  background-color: $cinza-claro;
+  padding: 30px 0;
+  width: 100%;
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    &__copyright {
+      margin-bottom: 30px;
+    }
+
+      hr {
+        background-color: $cinza-claro2;
+        height: 1px;
+        margin: 30px 0;
+        width: 100%;
+      }
+
+      p {
+        color: $cinza-font-escura;
+        font-size: 0.625rem;
+        line-height: 1rem;
+        text-align: center;
+      }
+
+      &__develop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          color: $cinza-font-escura;
+          font-size: 0.75rem;
+          line-height: 1rem;
+          margin-right: 10px;
+          text-align: center;
+        }
+      }
+}

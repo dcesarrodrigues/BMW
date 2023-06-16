@@ -1,0 +1,13 @@
+.button {
+  color: $branco;
+  font-family: $fontFamilyBold;
+  font-weight: $bold;
+  font-size: 0.75rem;
+
+  height: 35px;
+  width: 47%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

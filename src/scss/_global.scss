@@ -1,14 +1,28 @@
 * {
   font-family: $fontFamilyLight;
-  font-size: 1rem;
+  font-size: 100%;
   color: $cinza-font;
+}
 
-  @media #{$mq-mobile} {
-    font-size: 30px;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+main {
+  margin-top: 105px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
+  box-sizing: border-box;
   padding: 0 25px;
   margin: 0 auto;
   max-width: 1400px;
@@ -17,4 +31,55 @@
   @media #{$mq-mobile} {
     padding: 0 16px;
   }
+}
+
+//ajustes no slider {
+  .splide__pagination__page {
+    background-color: $cinza-claro;
+    height: 14px;
+    opacity: 1;
+    width: 14px;
+
+    &.is-active {
+      background-color: $azul-claro;
+      height: 14px;
+      opacity: 1;
+      width: 14px;
+      transform: scale(1);
+    }
+  }
+
+.fontello {
+  font-family: "bmw-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0;
+ 
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
