@@ -13,3 +13,12 @@
   @media (max-width: 599px) {
     * {
       font-size: 30px; } }
+
+.container {
+  padding: 0 25px;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%; }
+  @media (max-width: 599px) {
+    .container {
+      padding: 0 16px; } }
