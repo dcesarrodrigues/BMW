@@ -9,11 +9,11 @@ gulp.task('default', watch);
 gulp.task('sass', sassCompiler);
 
 function sassCompiler() {
-  return gulp.src('assets/scss/**/*.scss')
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest('src/css'));
 }
 
 function watch() {
-  gulp.watch('assets/scss/**/*.scss', gulp.series(sassCompiler));
+  gulp.watch('src/scss/**/*.scss', gulp.series(sassCompiler));
 }
