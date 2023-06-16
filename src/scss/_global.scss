@@ -1,0 +1,9 @@
+* {
+  font-family: $fontFamilyLight;
+  font-size: 1rem;
+  color: $cinza-font;
+
+  @media #{$mq-mobile} {
+    font-size: 30px;
+  }
+}

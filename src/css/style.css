@@ -5,3 +5,11 @@
 @font-face {
   font-family: "BMWBold";
   src: url("../fonts/BMWTypeNext-Bold.20210426144302.ttf") format("ttf"); }
+
+* {
+  font-family: "BMWLight", sans-serif;
+  font-size: 1rem;
+  color: #666666; }
+  @media (max-width: 599px) {
+    * {
+      font-size: 30px; } }
