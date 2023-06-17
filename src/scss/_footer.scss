@@ -1,6 +1,7 @@
 .footer {
   background-color: $cinza-claro;
   padding: 30px 0;
+  margin-top: 50px;
   width: 100%;
 
   &__flex {
@@ -11,6 +12,14 @@
 
     &__copyright {
       margin-bottom: 30px;
+
+      @media #{$mq-notebook} {
+        margin-bottom: 0;
+        
+        p {
+          font-size: .75rem;
+        }
+      }
     }
 
       hr {
@@ -25,6 +34,10 @@
         font-size: 0.625rem;
         line-height: 1rem;
         text-align: center;
+        
+        @media #{$mq-notebook} {
+          font-size: .875rem;
+        }
       }
 
       &__develop {
@@ -40,4 +53,61 @@
           text-align: center;
         }
       }
+
+    &__sencond-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+
+      @media #{$mq-notebook} {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+      &__logo {
+        display: none;
+
+        @media #{$mq-notebook} {
+          display: block;
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+}
+
+// botão fixo whatsapp
+.button-fixed-whatsapp {
+  background-color: $verde;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+
+  @media #{$mq-notebook} {
+    display: none;
+  }
+
+  a {
+    height: 100%;
+    font-size: 2.5rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: $branco;
+    }
+  }
 }

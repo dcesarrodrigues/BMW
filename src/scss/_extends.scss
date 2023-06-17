@@ -1,5 +1,6 @@
 .button {
   color: $branco;
+  cursor: pointer;
   font-family: $fontFamilyBold;
   font-weight: $bold;
   font-size: 0.75rem;
@@ -10,4 +11,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.link-topo {
+  color: $branco;
+  font-family: $fontFamilyBold;
+  font-weight: $bold;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  span,
+  i {
+    color: $branco;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+
+  i {
+    margin-right: 4px;
+    font-size: 1rem;
+  }
 }

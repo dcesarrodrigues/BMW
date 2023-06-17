@@ -1,0 +1,14 @@
+.splide-desktop {
+  display: none;
+
+  @media #{$mq-tablet-large} {
+    display: flex;
+  }
+}
+
+.splide-mobile {
+
+  @media #{$mq-tablet-large} {
+    display: none;
+  }
+}

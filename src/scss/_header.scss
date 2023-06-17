@@ -3,6 +3,12 @@
   height: 61px;
   width: 100%;
 
+  transition: all 0.3s ease;
+
+  @media #{$mq-notebook} {
+    height: 150px;
+  }
+
   position: fixed;
   top: 0;
   z-index: 10;
@@ -11,6 +17,10 @@
     height: auto;
     padding: 13px 0;
     width: 100%;
+
+    @media #{$mq-notebook} {
+      padding: 30px 0;
+    }
     
     display: flex;
     justify-content: space-between;
@@ -20,44 +30,89 @@
   // bloco a esquerda no topo
   &__contato {
 
+    // --------------------------------
     //bloco de contato mobile
+    // --------------------------------
     &-mobile {
-      display: none;
+      display: block;
       
-      @media #{$mq-mobile} {
-        display: block;
-
-        a {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        }
-        
-        span {
-          font-size: 0.87rem;
-          color: $cinza-font;
-          font-family: $fontFamilyBold;
-          font-weight: $bold;
-          line-height: 0.85rem;
-        }
-        
-        i {
-          margin-right: 6px;
-          font-size: 0.87rem;
-          color: $cinza-font;
-          font-weight: $bold;
-          line-height: 0.85rem;
-        }
-      }
-    }
-
-    &-desktop {
-
-      @media #{$mq-tablet} {
+      @media #{$mq-notebook} {
         display: none;
+      }
+
+      a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      }
+      
+      span {
+        font-size: 0.87rem;
+        color: $cinza-font;
+        font-family: $fontFamilyBold;
+        font-weight: $bold;
+        line-height: 0.85rem;
+      }
+      
+      i {
+        margin-right: 6px;
+        font-size: 0.87rem;
+        color: $cinza-font;
+        font-weight: $bold;
+        line-height: 0.85rem;
       }
     }
   }
+
+  // --------------------------------
+    //bloco do topo desktop
+    // --------------------------------
+  &__desktop {
+    display: none;
+
+    @media #{$mq-notebook} {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+    &__desktop-contato {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  
+    &__button-default {
+      @extend .link-topo;
+
+      background-color: $preto;
+      height: auto;
+      padding: 12px 18px;
+      margin-right: 30px;
+      width: auto;
+
+      &--whatsapp {
+        background-color: $verde;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &__desktop-menu {
+      display: flex;
+      padding: 0 5px;
+      
+      .header__menuitem {
+        margin-right: 60px;
+        
+        a {
+          font-size: 0.875rem;
+          font-family: $fontFamilyBold;
+          font-weight: $bold;
+        }
+      }
+    }
 
   //bloco a direita no topo 
   &__logo {
@@ -68,10 +123,19 @@
     
     img {
       width: 34.5px;
+      height: auto;
+
+      @media #{$mq-notebook} {
+        width: 92px;
+      }
     }
   }
 
   &__button-fixed {
+
+    @media #{$mq-notebook} {
+      display: none;
+    }
 
     button {
       @extend .button;
@@ -82,4 +146,22 @@
       width: 100%;
     }
   }
-}
+
+  //efeito visual para o topo
+  &.scroll-on {
+    @media #{$mq-notebook} {
+      height: 124px;
+
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    }
+
+    .header__flex {
+
+      @media #{$mq-notebook} {
+        padding: 15px 0;
+      }
+    }
+  }
+} 

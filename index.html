@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMW</title>
+  <title>BMW: Qualidade, Segurança e Estilo Moderno</title>
+  <meta description="A BMW oferece qualidade superior, segurança incomparável e estilo moderno em todos os seus veículos. Venha nos visitar e experimente o melhor em automóveis.">
   
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/lib/splide.min.css">
@@ -12,7 +13,7 @@
 <body>
 
   <!-- inicio do header  -->
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
       <div class="header__flex">
         <div class="header__contato">
@@ -22,7 +23,63 @@
               <span>(21) 2042-4442</span>
             </a>
           </div>
-          <div class="header__contato-desktop"></div>
+          <div class="header__desktop">
+            <div class="header__desktop-contato">
+              <a href="#" class="header__button-default">
+                <i class="fontello icon-telefone">&#xe804;</i>
+                <span>(21) 2042-4442</span>
+              </a>
+              <a href="#" class="header__button-default">
+                <i class="fontello icon-360">&#xe806;</i>
+                <span>Faça um tour</span>
+              </a>
+              <a href="#" class="header__button-default header__button-default--whatsapp">
+                <i class="fontello icon-whatsapp">&#xe805;</i>
+                <span>Whatsapp</span>
+              </a>
+            </div>       
+              <menu class="header__desktop-menu" type="context">
+                <menuitem class="header__menuitem" label="2">
+                  <a href="#">1</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="2">
+                  <a href="#">2</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="3">
+                  <a href="#">3</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="4">
+                  <a href="#">4</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="5">
+                  <a href="#">5</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="6">
+                  <a href="#">6</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="7">
+                  <a href="#">7</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="8">
+                  <a href="#">8</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="8">
+                  <a href="#">x</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="8">
+                  <a href="#">z</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="8">
+                  <a href="#">m</a>
+                </menuitem> 
+                <menuitem class="header__menuitem" label="8">
+                  <a href="#">i</a>
+                </menuitem>   
+                <menuitem class="header__menuitem" label="8">
+                  <a href="#">Plug-in-Hybrid</a>
+                </menuitem> 
+              </menu>
+          </div>
         </div>
         <div class="header__logo">
           <a href="/">
@@ -42,7 +99,7 @@
 
     <!-- Banner topo -->
     <section class="banner-principal">
-      <div class="splide" aria-label="BMW">
+      <div class="splide splide-mobile" aria-label="BMW">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -56,6 +113,21 @@
             </li>
           </ul>
         </div>
+      </div>     
+      <div class="splide splide-desktop" aria-label="BMW">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="/src/imgs/banners/desktop-banner.jpg" alt="BMW Rio">
+            </li>
+            <li class="splide__slide">
+              <img src="/src/imgs/banners/desktop-banner.jpg" alt="BMW Rio">
+            </li>
+            <li class="splide__slide">
+              <img src="/src/imgs/banners/desktop-banner.jpg" alt="BMW Rio">
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -65,7 +137,91 @@
         <div class="showcase__title">
           <h2>Escolha seu BMW</h2>
         </div>
-        <div class="shocase__grid">
+        <div class="showcase__grid">
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="showcase__item">
+            <figure class="showcase__figure">
+              <img src="/src/imgs/veiculos/serie1.png" alt="carro">
+              <figcaption class="showcase__titulo">BMW Série 1</figcaption>
+            </figure>
+            <div class="showcase__buttons">
+              <div class="showcase__button--cotacao">Cotação</div>
+              <div class="showcase__button--contato">Ligar</div>
+            </div> 
+            <div class="showcase__share">
+              <span>Compartilhe:</span>
+              <a href="#">
+                <i class="fontello icon-facebook">&#xe808;</i>
+              </a>
+              <a href="#">
+              <i class="fontello icon-whatsapp">&#xe805;</i>
+              </a>
+            </div>
+          </div>
 
           <!-- Item -->
           <div class="showcase__item">
@@ -171,14 +327,25 @@
           </p>
         </div>
         <hr>
-        <div class="footer__copyright">
-          <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
-        </div>  
-        <div class="footer__develop">
-          <span>Feito por:</span>
-          <img src="/src/imgs/logos/logo-alpes.png" alt="Alpes One">
+        <div class="footer__sencond-block">
+          <div class="footer__logo">
+            <img src="/src/imgs/logos/logo-bmw-rio.svg" alt="BMW">
+          </div>  
+          <div class="footer__copyright">
+            <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
+          </div>  
+          <div class="footer__develop">
+            <span>Feito por:</span>
+            <img src="/src/imgs/logos/logo-alpes.png" alt="Alpes One">
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="button-fixed-whatsapp">
+      <a href="#">
+        <i class="fontello icon-whatsapp">&#xe805;</i>
+      </a>
     </div>
   </footer>
   <!-- Fim footer -->

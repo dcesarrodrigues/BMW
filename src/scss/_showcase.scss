@@ -3,11 +3,17 @@
 
   &__title {
     margin: 30px 0;
+
     h2 {
+      color: $cinza-font-escura;
       font-size: 1.25rem;
       text-transform: uppercase;
       text-align: center;
       width: 100%;
+
+      @media #{$mq-notebook} {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -15,20 +21,28 @@
     display: grid;
     width: 100%;
 
-    @media #{$mq-mobile} {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 20px;
 
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-gap: 20px;
+    @media #{$mq-tablet} {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }    
+
+    @media #{$mq-tablet-large} {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media #{$mq-notebook} {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 50px;
     }
   }
 
-    &__item {
-      
-      @media #{$mq-mobile} {
-        margin-bottom: 25px;
-      }
-    }
+    &__item {}
 
       &__figure {
         display: flex;
@@ -54,11 +68,20 @@
         &__button--cotacao {
           @extend .button;
           background-color: $azul-claro;
+
+          @media #{$mq-notebook} {
+            font-size: 0.75rem;
+            width: 100%;
+          }
         }
         
         &__button--contato {
           @extend .button;
           background-color: $cinza-font;
+
+          @media #{$mq-notebook} {
+            display: none;
+          }
         }
       
       &__share {
