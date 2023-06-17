@@ -21,13 +21,6 @@
         font-size: 1.3rem;
       }
     }
-
-
-    &__figure:hover img {
-      opacity: .5;
-      cursor: pointer;
-    }
-
   }
 
     
@@ -40,6 +33,7 @@
 
   .splide__pagination {
     bottom: -65px;
+    display: flex !important;
   }
 
   .splide__arrow {

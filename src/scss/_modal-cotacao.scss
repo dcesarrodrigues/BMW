@@ -1,0 +1,115 @@
+.modal-cotacao {
+  display: none;
+
+  @media #{$mq-notebook} {
+    display: block;
+  }
+
+  background-color: $branco;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  right: 5%;
+  width: 255px;
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+    &__title {
+      margin-bottom: 15px;
+      font-size: 1.25rem;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        color: $preto;
+        font-size: 1.25rem;
+      }
+
+      i {
+        margin-right: 10px;
+        color: $azul-claro;
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+      &__item {
+        position: relative;
+        width: 100%;
+      }
+
+        &__input,
+        &__label {
+          font-family: $fontFamilyLight;
+          font-size: 0.875rem;
+          width: 100%;
+          padding: 0 !important;
+        }
+
+        &__input {
+          height: 40px;
+          margin-bottom: 30px;
+          width: 100%;
+
+          border: 0;
+          border-bottom: 1px solid $cinza-claro2;
+          background: transparent;
+          transition: all .3s ease;
+
+          &:focus,
+          &:valid {
+            border-bottom: 1px solid $azul-claro;
+          }
+
+          &:focus + label,
+          &:valid + label {
+            // border-bottom: 1px solid $azul-claro;
+            top: -10px;
+          }
+
+          &--textarea {
+            margin-top: 16px;
+          }
+
+          &--textarea:valid + label {
+            top: -10px;
+          }
+
+          
+        }
+
+        &__label {
+          position: absolute;
+          cursor: text;
+          z-index: 2;
+          top: 10px;
+          left: 0;
+          font-size: 12px;
+          font-weight: bold;
+          background: #fff;
+          padding: 0 10px;
+          color: #999;
+          transition: all .3s ease
+        }
+
+        &__button {
+          @extend .button;
+          background-color: $azul-claro;
+          width: 100%;
+
+          &:hover {
+            background-color: $azul-hover;
+          }
+        }
+}

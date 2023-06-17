@@ -13,7 +13,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.button, .header__button-fixed button, .showcase__button--cotacao, .showcase__button--contato {
+.button, .header__button-fixed button, .showcase__button--cotacao, .showcase__button--contato, .modal-cotacao__button {
   color: #ffffff;
   cursor: pointer;
   font-family: "BMWBold", sans-serif;
@@ -235,13 +235,11 @@ a {
     font-size: 0.75rem; }
   .dropdown-gallery .showcase__share i {
     font-size: 1.3rem; }
-  .dropdown-gallery .showcase__figure:hover img {
-    opacity: .5;
-    cursor: pointer; }
   .dropdown-gallery .showcase__nome:hover {
     cursor: pointer; }
   .dropdown-gallery .splide__pagination {
-    bottom: -65px; }
+    bottom: -65px;
+    display: flex !important; }
   .dropdown-gallery .splide__arrow {
     background-color: transparent; }
     .dropdown-gallery .splide__arrow svg {
@@ -250,6 +248,9 @@ a {
     right: -35px; }
   .dropdown-gallery .splide__arrow--prev {
     left: -35px; }
+
+.banner-principal {
+  position: relative; }
 
 .splide-desktop {
   display: none; }
@@ -297,6 +298,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .showcase__figure:hover img {
+    opacity: .5;
+    cursor: pointer; }
 
 .showcase__nome {
   color: #262626;
@@ -336,6 +340,81 @@ a {
     color: #1C69D4; }
   .showcase__share i {
     font-size: 1.5rem; }
+
+.modal-cotacao {
+  display: none;
+  background-color: #ffffff;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  right: 5%;
+  width: 255px; }
+  @media (min-width: 1200px) {
+    .modal-cotacao {
+      display: block; } }
+  .modal-cotacao__flex {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+  .modal-cotacao__title {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .modal-cotacao__title p {
+      color: #000000;
+      font-size: 1.25rem; }
+    .modal-cotacao__title i {
+      margin-right: 10px;
+      color: #1C69D4; }
+  .modal-cotacao__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .modal-cotacao__item {
+    position: relative;
+    width: 100%; }
+  .modal-cotacao__input, .modal-cotacao__label {
+    font-family: "BMWLight", sans-serif;
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 0 !important; }
+  .modal-cotacao__input {
+    height: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #bbbbbb;
+    background: transparent;
+    transition: all .3s ease; }
+    .modal-cotacao__input:focus, .modal-cotacao__input:valid {
+      border-bottom: 1px solid #1C69D4; }
+    .modal-cotacao__input:focus + label,
+    .modal-cotacao__input:valid + label {
+      top: -10px; }
+    .modal-cotacao__input--textarea {
+      margin-top: 16px; }
+    .modal-cotacao__input--textarea:valid + label {
+      top: -10px; }
+  .modal-cotacao__label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 10px;
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease; }
+  .modal-cotacao__button {
+    background-color: #1C69D4;
+    width: 100%; }
+    .modal-cotacao__button:hover {
+      background-color: #0351BE; }
 
 .footer {
   background-color: #e6e6e6;

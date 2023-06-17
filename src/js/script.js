@@ -28,8 +28,8 @@ new Splide( '.splide.gallery-dropdown-splide', {
 
 //efeito visual para o topo
 window.onscroll = function() {
-  var header = document.getElementById("header");
-  var sticky = header.offsetTop;
+  const header = document.getElementById("header");
+  let sticky = header.offsetTop;
 
   window.scrollY > sticky ? 
   header.classList.add("scroll-on") :  
@@ -44,7 +44,7 @@ const dropdownMenu = document.getElementById("dropdown-gallery");
 // verifica cada item do menu
 menuItems.forEach(item => {
     item.addEventListener('click', function(event) {
-      // impede que o evento atual se propague para outros elementos
+      // impede que o evento atual se propague
       event.stopPropagation(); 
       dropdownMenu.style.display = 'flex';
   });

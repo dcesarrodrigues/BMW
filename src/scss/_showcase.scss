@@ -48,6 +48,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
+
+        &:hover {
+          
+          img {
+            opacity: .5;
+            cursor: pointer;
+          }
+        }
       }
 
         &__nome {

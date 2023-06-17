@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- Tag par SEO -->
+  <!-- Tag para SEO -->
   <h1 style="display: none">BMW: Qualidade, Segurança e Estilo Moderno</h1>
 
   <!-- inicio do header  -->
@@ -444,7 +444,9 @@
         <hr>
         <div class="footer__sencond-block">
           <div class="footer__logo">
-            <img src="/src/imgs/logos/logo-bmw-rio.svg" alt="BMW">
+            <a href="/">
+              <img src="/src/imgs/logos/logo-bmw-rio.svg" alt="BMW">
+            </a>
           </div>  
           <div class="footer__copyright">
             <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
@@ -457,14 +459,46 @@
       </div>
     </div>
 
+    <!-- botão flutuante whatsapp -->
     <div class="button-fixed-whatsapp">
       <a href="#">
         <i class="fontello icon-whatsapp">&#xe805;</i>
       </a>
     </div>
+
+    <!-- modal de cotação -->
+    <div class="modal-cotacao">
+      <div class="modal-cotacao__flex">
+        <div class="modal-cotacao__title">
+          <i class="fontello icon-carro">&#xe807;</i><p>Solicitar cotação</p>
+        </div>
+        <form class="modal-cotacao__form">
+          <div class="modal-cotacao__item">
+            <input class="modal-cotacao__input" type="text" id="nome" required>
+            <label class="modal-cotacao__label" for="nome">Nome</label>
+          </div>
+          <div class="modal-cotacao__item">
+            <input class="modal-cotacao__input" type="email" id="email" required>
+            <label class="modal-cotacao__label" for="email">E-mail</label>
+          </div>
+          <div class="modal-cotacao__item">
+            <input class="modal-cotacao__input" type="tel" id="telefone" required>
+            <label class="modal-cotacao__label" for="telefone">Telefone</label>
+          </div>
+          <div class="modal-cotacao__item">
+            <input class="modal-cotacao__input" type="text" id="modelo" required>
+            <label class="modal-cotacao__label" for="modelo">Modelo</label>
+          </div>
+          <div class="modal-cotacao__item">
+            <textarea class="modal-cotacao__input modal-cotacao__input--textarea" id="mensagem"></textarea>
+            <label class="modal-cotacao__label" for="mensagem">Mensagem</label>
+          </div>
+          <button class="modal-cotacao__button" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
   </footer>
   <!-- Fim footer -->
-
 </body>
 
 <script src="./src/js/lib/splide.min.js"></script>
