@@ -4,6 +4,7 @@
   width: 100%;
 
   transition: all 0.3s ease;
+  box-shadow: 0px 3px 6px #00000029;
 
   @media #{$mq-notebook} {
     height: 150px;
@@ -90,8 +91,16 @@
       margin-right: 30px;
       width: auto;
 
+      &:hover {
+        background-color: $preto-hover;
+      }
+
       &--whatsapp {
         background-color: $verde;
+
+        &:hover {
+          background-color: $verde-hover;
+        }
       }
 
       &:last-of-type {
@@ -104,12 +113,23 @@
       padding: 0 5px;
       
       .header__menuitem {
-        margin-right: 60px;
+        margin-right: 40px;
+        cursor: pointer;
+
+        &:hover {
+
+          a {
+            color: $azul-claro;
+          }
+        }
         
         a {
           font-size: 0.875rem;
           font-family: $fontFamilyBold;
           font-weight: $bold;
+          pointer-events: none;
+          padding: 0 10px;
+          display: table;
         }
       }
     }
@@ -144,6 +164,10 @@
       font-size: 0.875rem;
       height: 45px;
       width: 100%;
+
+      &:hover {
+        background-color: $azul-hover;
+      }
     }
   }
 
@@ -152,9 +176,13 @@
     @media #{$mq-notebook} {
       height: 124px;
 
-      -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+      // -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+      // -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+      // box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    }
+
+    .dropdown-gallery {
+      top: 124px;
     }
 
     .header__flex {

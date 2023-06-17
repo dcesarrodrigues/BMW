@@ -1,0 +1,60 @@
+.dropdown-gallery {
+  
+  display: none; //padrão de exibição
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 30px 0;
+  
+  height: 380px;
+  width: 100%;
+  background-color: $branco;
+  position: fixed;
+  top: 150px;
+
+  .showcase {
+    &__share {
+
+      span {
+        font-size: 0.75rem;
+      }
+
+      i {
+        font-size: 1.3rem;
+      }
+    }
+
+
+    &__figure:hover img {
+      opacity: .5;
+      cursor: pointer;
+    }
+
+  }
+
+    
+  .showcase__nome {
+      
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .splide__pagination {
+    bottom: -65px;
+  }
+
+  .splide__arrow {
+    background-color: transparent;
+
+    svg {
+      fill: $cinza-font-escura;
+    }
+  }
+
+  .splide__arrow--next {
+    right: -35px;
+  }
+  
+  .splide__arrow--prev {
+    left: -35px;
+  }
+}

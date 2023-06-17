@@ -50,7 +50,7 @@
         justify-content: center;
       }
 
-        &__titulo {
+        &__nome {
           color: $cinza-font-escura;
           font-size: 1.25rem;
           line-height: 1.65rem;
@@ -73,7 +73,11 @@
             font-size: 0.75rem;
             width: 100%;
           }
-        }
+
+          &:hover {
+            background-color: $azul-hover;
+          }
+        } 
         
         &__button--contato {
           @extend .button;
@@ -86,6 +90,7 @@
       
       &__share {
         display: flex;
+        align-items: center;
 
         span {
           font-size: 0.875rem;
@@ -95,6 +100,13 @@
 
           &:first-of-type {
             margin: 0 16px;
+          }
+
+          &:hover {
+
+            i {
+              color: $azul-claro;
+            }
           }
         }
 
