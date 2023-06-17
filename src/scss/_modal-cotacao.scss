@@ -1,16 +1,21 @@
 .modal-cotacao {
   display: none;
 
-  @media #{$mq-notebook} {
-    display: block;
-  }
-
   background-color: $branco;
   height: auto;
   position: absolute;
   top: 80px;
   right: 5%;
   width: 255px;
+
+  @media #{$mq-notebook} {
+    display: block;
+  }
+
+
+  @media #{$mq-desktop} {
+    right: 15%;
+  }
 
   &__flex {
     display: flex;

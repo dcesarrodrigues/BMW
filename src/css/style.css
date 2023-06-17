@@ -352,6 +352,9 @@ a {
   @media (min-width: 1200px) {
     .modal-cotacao {
       display: block; } }
+  @media (min-width: 1800px) {
+    .modal-cotacao {
+      right: 15%; } }
   .modal-cotacao__flex {
     display: flex;
     flex-direction: column;
